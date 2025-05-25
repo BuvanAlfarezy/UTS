@@ -46,7 +46,7 @@
             {{ request()->is('berita')
               ? 'text-blue-700 bg-blue-100 md:bg-transparent md:text-blue-700 dark:text-blue-500 dark:bg-transparent'
               : 'text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent' }}">
-          Blog UMKM
+          Blog
         </a>
       </li>
 
