@@ -50,7 +50,7 @@
                     class="rounded-lg border border-gray-200 bg-white shadow-sm p-6 dark:border-gray-700 dark:bg-gray-800">
                     <div class="mb-4 h-56 w-full overflow-hidden rounded-lg">
                         <a href="#">
-                            <img src="https://images.pexels.com/photos/5946881/pexels-photo-5946881.jpeg?auto=compress&cs=tinysrgb&w=800"
+                            <img src="{{ asset('img/7.jpg') }}"
                                 alt="Keripik Pisang" class="w-full h-full object-cover" />
                         </a>
                     </div>
@@ -79,7 +79,7 @@
                     class="rounded-lg border border-gray-200 bg-white shadow-sm p-6 dark:border-gray-700 dark:bg-gray-800">
                     <div class="mb-4 h-56 w-full overflow-hidden rounded-lg">
                         <a href="#">
-                            <img src="https://images.pexels.com/photos/1394884/pexels-photo-1394884.jpeg?auto=compress&cs=tinysrgb&w=800"
+                            <img src="{{ asset('img/8.png') }}"
                                 alt="Tas Anyaman" class="w-full h-full object-cover" />
                         </a>
                     </div>
@@ -95,11 +95,10 @@
                         santai atau formal.
                     </p>
                     <div class="flex justify-center mt-5">
-                        <button data-modal-target="readProductModal" data-modal-toggle="readProductModal"
+                        <button data-modal-target="readProductModal2" data-modal-toggle="readProductModal2"
                             class="text-white bg-blue-600 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-blue-700 dark:hover:bg-blue-900 dark:focus:ring-blue-800">
                             Lihat Detail
                         </button>
-
                     </div>
                 </div>
 
@@ -108,7 +107,7 @@
                     class="rounded-lg border border-gray-200 bg-white shadow-sm p-6 dark:border-gray-700 dark:bg-gray-800">
                     <div class="mb-4 h-56 w-full overflow-hidden rounded-lg">
                         <a href="#">
-                            <img src="https://images.pexels.com/photos/1258761/pexels-photo-1258761.jpeg?auto=compress&cs=tinysrgb&w=800"
+                            <img src="{{ asset('img/9.jpeg') }}"
                                 alt="Batik Tulis" class="w-full h-full object-cover" />
                         </a>
                     </div>
@@ -124,7 +123,7 @@
                         Warna tahan lama.
                     </p>
                     <div class="flex justify-center mt-5">
-                        <button data-modal-target="readProductModal" data-modal-toggle="readProductModal"
+                        <button data-modal-target="readProductModal3" data-modal-toggle="readProductModal3"
                             class="text-white bg-blue-600 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-blue-700 dark:hover:bg-blue-900 dark:focus:ring-blue-800">
                             Lihat Detail
                         </button>
@@ -134,5 +133,6 @@
         </section>
     </div>
     <x-modal />
+    <x-footer />
 </body>
 </html>
