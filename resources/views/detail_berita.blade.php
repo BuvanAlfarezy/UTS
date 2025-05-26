@@ -55,7 +55,7 @@
 
             <div class="mt-10">
                 <a href="{{ url('/berita') }}" class="inline-flex items-center text-blue-600 hover:underline dark:text-blue-400">
-                    ← Kembali ke Daftar Berita
+                    ← Kembali ke Daftar Blog
                 </a>
             </div>
         </article>

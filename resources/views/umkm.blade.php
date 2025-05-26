@@ -68,7 +68,8 @@
 
         <!-- Produk Grid Section -->
         <section class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+            <div class="grid gap-6 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
+
 
                 <!-- Produk 1: Keripik Pisang -->
                 <div data-kategori="makanan"
@@ -91,7 +92,8 @@
                         <li class="flex items-center gap-2">🍌 100% Pisang Lokal</li>
                     </ul>
                     <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">
-                        Keripik pisang khas Lampung dengan perpaduan rasa manis dan pedas yang bikin nagih. yang dapat dinikmati kapan saja
+                        Keripik pisang khas Lampung dengan perpaduan rasa manis dan pedas yang bikin nagih. yang dapat
+                        dinikmati kapan saja
                     </p>
                     <div class="flex justify-center mt-5">
                         <button data-modal-target="readProductModal" data-modal-toggle="readProductModal"
@@ -144,7 +146,7 @@
                     <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
                         <a href="#" class="hover:underline">Batik Tulis Motif Parang</a>
                     </h3>
-                    
+
                     <span
                         class="inline-block mt-2 mb-3 text-xs font-medium bg-blue-100 text-blue-800 px-3 py-1 rounded dark:bg-blue-200 dark:text-blue-900">
                         Pakaian
@@ -169,29 +171,29 @@
     </section>
     <x-modal />
     <x-footer />
-   <script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const form = document.querySelector('form[action=""]'); // ambil form filter kategori
-        const select = document.getElementById("kategori");
-        const cards = document.querySelectorAll("[data-kategori]");
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const form = document.querySelector('form[action=""]'); // ambil form filter kategori
+            const select = document.getElementById("kategori");
+            const cards = document.querySelectorAll("[data-kategori]");
 
-        form.addEventListener("submit", function (e) {
-            e.preventDefault(); // mencegah reload halaman
+            form.addEventListener("submit", function(e) {
+                e.preventDefault(); // mencegah reload halaman
 
-            const selected = select.value;
+                const selected = select.value;
 
-            cards.forEach(card => {
-                const kategori = card.getAttribute("data-kategori");
+                cards.forEach(card => {
+                    const kategori = card.getAttribute("data-kategori");
 
-                if (selected === "" || kategori === selected) {
-                    card.classList.remove("hidden");
-                } else {
-                    card.classList.add("hidden");
-                }
+                    if (selected === "" || kategori === selected) {
+                        card.classList.remove("hidden");
+                    } else {
+                        card.classList.add("hidden");
+                    }
+                });
             });
         });
-    });
-</script>
+    </script>
 
 
 

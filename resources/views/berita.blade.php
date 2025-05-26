@@ -104,7 +104,7 @@
                         </div>
 
                         <!-- Tanggal di kanan -->
-                        <span class="text-sm">2 hari yang lalu</span>
+                        <span class="text-sm">4 hari yang lalu</span>
                     </div>
 
                     <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
@@ -133,7 +133,7 @@
                 <!-- Artikel 3 -->
                 <article data-kategori="pakaian"
                     class="p-6 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
-                    <img src="{{ asset('img/12.jpg') }}" alt="Produk UMKM"
+                    <img src="{{ asset('img/19.jpg') }}" alt="Produk UMKM"
                         class="w-full h-48 object-cover rounded-lg mb-4" />
 
                     <div class="flex justify-between items-center mb-5 text-gray-500">

@@ -34,67 +34,70 @@
             </p>
         </section>
 
-       <section class="bg-white dark:bg-gray-700 rounded-lg shadow p-6">
-    <h3 class="text-xl font-semibold mb-4">Produk Unggulan Kami</h3>
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <section class="bg-white dark:bg-gray-700 rounded-lg shadow p-6">
+            <h3 class="text-xl font-semibold mb-4">Produk Unggulan Kami</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
 
-        <!-- Produk 1 -->
-        <div class="bg-gray-100 dark:bg-gray-800 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
-            <img src="{{ asset('img/16.jpg') }}" alt="Produk Kerajinan Kayu"
-                class="w-full h-48 object-cover" />
-            <div class="p-4 space-y-1">
-                <h4 class="font-semibold text-lg">Kerajinan Kayu</h4>
-                <p class="text-sm text-gray-600 dark:text-gray-400">
-                    Produk kerajinan tangan kayu berkualitas tinggi dengan desain modern.
-                </p>
-                <p class="text-sm text-gray-800 dark:text-gray-200 font-medium">Harga: Rp150.000</p>
-                <p class="text-sm text-gray-800 dark:text-gray-200">Bahan: Kayu Jati Belanda</p>
+                <!-- Produk 1 -->
+                <div
+                    class="bg-gray-100 dark:bg-gray-800 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
+                    <img src="{{ asset('img/16.jpg') }}" alt="Produk Kerajinan Kayu" class="w-full h-48 object-cover" />
+                    <div class="p-4 space-y-1">
+                        <h4 class="font-semibold text-lg">Kerajinan Kayu</h4>
+                        <p class="text-sm text-gray-600 dark:text-gray-400">
+                            Produk kerajinan tangan kayu berkualitas tinggi dengan desain modern.
+                        </p>
+                        <p class="text-sm text-gray-800 dark:text-gray-200 font-medium">Harga: Rp150.000</p>
+                        <p class="text-sm text-gray-800 dark:text-gray-200">Bahan: Kayu Jati Belanda</p>
+                    </div>
+                </div>
+
+                <!-- Produk 2 -->
+                <div
+                    class="bg-gray-100 dark:bg-gray-800 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
+                    <img src="{{ asset('img/17.jpg') }}" alt="Tas Anyaman" class="w-full h-48 object-cover" />
+                    <div class="p-4 space-y-1">
+                        <h4 class="font-semibold text-lg">Tas Anyaman</h4>
+                        <p class="text-sm text-gray-600 dark:text-gray-400">
+                            Tas anyaman tradisional dengan bahan ramah lingkungan dan kuat.
+                        </p>
+                        <p class="text-sm text-gray-800 dark:text-gray-200 font-medium">Harga: Rp120.000</p>
+                        <p class="text-sm text-gray-800 dark:text-gray-200">Bahan: Serat Pandan & Kulit Sintetis</p>
+                    </div>
+                </div>
+
+                <!-- Produk 3 -->
+                <div
+                    class="bg-gray-100 dark:bg-gray-800 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
+                    <img src="{{ asset('img/18.jpg') }}" alt="Aksesoris Handmade" class="w-full h-48 object-cover" />
+                    <div class="p-4 space-y-1">
+                        <h4 class="font-semibold text-lg">Aksesoris Handmade</h4>
+                        <p class="text-sm text-gray-600 dark:text-gray-400">
+                            Aksesoris unik buatan tangan yang cocok untuk koleksi dan hadiah.
+                        </p>
+                        <p class="text-sm text-gray-800 dark:text-gray-200 font-medium">Harga: Rp75.000</p>
+                        <p class="text-sm text-gray-800 dark:text-gray-200">Bahan: Manik-Manik Kaca & Kawat Tembaga</p>
+                    </div>
+                </div>
+
             </div>
-        </div>
-
-        <!-- Produk 2 -->
-        <div class="bg-gray-100 dark:bg-gray-800 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
-            <img src="{{ asset('img/17.jpg') }}" alt="Tas Anyaman" class="w-full h-48 object-cover" />
-            <div class="p-4 space-y-1">
-                <h4 class="font-semibold text-lg">Tas Anyaman</h4>
-                <p class="text-sm text-gray-600 dark:text-gray-400">
-                    Tas anyaman tradisional dengan bahan ramah lingkungan dan kuat.
-                </p>
-                <p class="text-sm text-gray-800 dark:text-gray-200 font-medium">Harga: Rp120.000</p>
-                <p class="text-sm text-gray-800 dark:text-gray-200">Bahan: Serat Pandan & Kulit Sintetis</p>
-            </div>
-        </div>
-
-        <!-- Produk 3 -->
-        <div class="bg-gray-100 dark:bg-gray-800 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
-            <img src="{{ asset('img/18.jpg') }}" alt="Aksesoris Handmade" class="w-full h-48 object-cover" />
-            <div class="p-4 space-y-1">
-                <h4 class="font-semibold text-lg">Aksesoris Handmade</h4>
-                <p class="text-sm text-gray-600 dark:text-gray-400">
-                    Aksesoris unik buatan tangan yang cocok untuk koleksi dan hadiah.
-                </p>
-                <p class="text-sm text-gray-800 dark:text-gray-200 font-medium">Harga: Rp75.000</p>
-                <p class="text-sm text-gray-800 dark:text-gray-200">Bahan: Manik-Manik Kaca & Kawat Tembaga</p>
-            </div>
-        </div>
-
-    </div>
-</section>
+        </section>
 
 
         <!-- Kontak & Sosial Media -->
         <section class="bg-white dark:bg-gray-700 rounded-lg shadow p-6">
-            <h3 class="text-xl font-semibold mb-4">Kontak & Sosial Media</h3>
+            <h3 class="text-xl font-semibold mb-4">Untuk Pembelian Anda Bisa menghubugi Kontak atau Sosial Media Dibawah Ini :</h3>
             <div class="space-y-4 text-gray-700 dark:text-gray-300">
 
                 <!-- Instagram -->
                 <a href="https://instagram.com/umkm_ig" target="_blank"
-    class="flex items-center gap-3 text-pink-600 hover:text-pink-800 transition">
-    <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-        <path d="M12 2.2c3.2 0 3.584.012 4.849.07 1.366.062 2.633.355 3.608 1.33.975.975 1.268 2.242 1.33 3.608.058 1.265.07 1.649.07 4.849s-.012 3.584-.07 4.849c-.062 1.366-.355 2.633-1.33 3.608-.975.975-2.242 1.268-3.608 1.33-1.265.058-1.649.07-4.849.07s-3.584-.012-4.849-.07c-1.366-.062-2.633-.355-3.608-1.33-.975-.975-1.268-2.242-1.33-3.608C2.212 15.784 2.2 15.4 2.2 12s.012-3.584.07-4.849c.062-1.366.355-2.633 1.33-3.608C4.575 2.625 5.842 2.332 7.208 2.27 8.473 2.212 8.858 2.2 12 2.2zm0-2.2C8.736 0 8.332.012 7.053.07 5.468.142 4.045.474 2.91 1.609.774 3.745.442 5.168.37 6.753.312 8.032.3 8.436.3 12c0 3.564.012 3.968.07 5.247.072 1.585.404 3.008 1.539 4.143 1.135 1.135 2.558 1.467 4.143 1.539C8.032 23.988 8.436 24 12 24s3.968-.012 5.247-.07c1.585-.072 3.008-.404 4.143-1.539 1.135-1.135 1.467-2.558 1.539-4.143.058-1.279.07-1.683.07-5.247s-.012-3.968-.07-5.247c-.072-1.585-.404-3.008-1.539-4.143C20.255.774 18.832.442 17.247.37 15.968.312 15.564.3 12 .3zM12 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a3.999 3.999 0 1 1 0-7.998 3.999 3.999 0 0 1 0 7.998zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/>
-    </svg>
-    <span>@umkm_ig</span>
-</a>
+                    class="flex items-center gap-3 text-pink-600 hover:text-pink-800 transition">
+                    <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12 2.2c3.2 0 3.584.012 4.849.07 1.366.062 2.633.355 3.608 1.33.975.975 1.268 2.242 1.33 3.608.058 1.265.07 1.649.07 4.849s-.012 3.584-.07 4.849c-.062 1.366-.355 2.633-1.33 3.608-.975.975-2.242 1.268-3.608 1.33-1.265.058-1.649.07-4.849.07s-3.584-.012-4.849-.07c-1.366-.062-2.633-.355-3.608-1.33-.975-.975-1.268-2.242-1.33-3.608C2.212 15.784 2.2 15.4 2.2 12s.012-3.584.07-4.849c.062-1.366.355-2.633 1.33-3.608C4.575 2.625 5.842 2.332 7.208 2.27 8.473 2.212 8.858 2.2 12 2.2zm0-2.2C8.736 0 8.332.012 7.053.07 5.468.142 4.045.474 2.91 1.609.774 3.745.442 5.168.37 6.753.312 8.032.3 8.436.3 12c0 3.564.012 3.968.07 5.247.072 1.585.404 3.008 1.539 4.143 1.135 1.135 2.558 1.467 4.143 1.539C8.032 23.988 8.436 24 12 24s3.968-.012 5.247-.07c1.585-.072 3.008-.404 4.143-1.539 1.135-1.135 1.467-2.558 1.539-4.143.058-1.279.07-1.683.07-5.247s-.012-3.968-.07-5.247c-.072-1.585-.404-3.008-1.539-4.143C20.255.774 18.832.442 17.247.37 15.968.312 15.564.3 12 .3zM12 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a3.999 3.999 0 1 1 0-7.998 3.999 3.999 0 0 1 0 7.998zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z" />
+                    </svg>
+                    <span>@umkm_ig</span>
+                </a>
 
 
                 <!-- Facebook -->

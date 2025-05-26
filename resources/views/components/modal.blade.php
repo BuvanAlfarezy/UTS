@@ -112,13 +112,12 @@
             <!-- Modal body -->
             <div class="p-6 space-y-6">
                 <!-- Gambar Produk -->
-                <img src="{{ asset('img/17.png') }}" alt="Gambar Produk UMKM"
+                <img src="{{ asset('img/15.jpg') }}" alt="Gambar Produk UMKM"
                     class="w-full h-48 object-cover rounded-lg">
 
                 <!-- Deskripsi Produk -->
                 <p class="text-base leading-relaxed text-gray-700 dark:text-gray-300">
-                    Ini adalah contoh produk UMKM yang ditampilkan dalam detail modal. Anda bisa menampilkan deskripsi,
-                    harga, gambar, dan lainnya di sini.
+                   Tas anyaman eceng gondok ini dibuat oleh umkm yang bernama Mandiri Craft yang  berlokasikan di Bandung.
                 </p>
 
                 <!-- Kontak & Sosial Media -->
@@ -126,10 +125,10 @@
                     <!-- Instagram -->
                     <a href="https://instagram.com/umkm_ig" target="_blank"
                         class="flex items-center gap-2 text-gray-600 dark:text-gray-300 hover:text-pink-600 transition">
-                        <svg class="w-5 h-5 text-pink-600" viewBox="0 0 24 24" fill="currentColor">
-                            <path
-                                d="M7.75 2h8.5C17.22 2 18 2.78 18 3.75v16.5c0 .97-.78 1.75-1.75 1.75h-8.5C6.78 22 6 21.22 6 20.25V3.75C6 2.78 6.78 2 7.75 2zM12 7.25A4.75 4.75 0 1 0 12 16.75 4.75 4.75 0 1 0 12 7.25zM17.25 6.25a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
-                        </svg>
+                        <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12 2.2c3.2 0 3.584.012 4.849.07 1.366.062 2.633.355 3.608 1.33.975.975 1.268 2.242 1.33 3.608.058 1.265.07 1.649.07 4.849s-.012 3.584-.07 4.849c-.062 1.366-.355 2.633-1.33 3.608-.975.975-2.242 1.268-3.608 1.33-1.265.058-1.649.07-4.849.07s-3.584-.012-4.849-.07c-1.366-.062-2.633-.355-3.608-1.33-.975-.975-1.268-2.242-1.33-3.608C2.212 15.784 2.2 15.4 2.2 12s.012-3.584.07-4.849c.062-1.366.355-2.633 1.33-3.608C4.575 2.625 5.842 2.332 7.208 2.27 8.473 2.212 8.858 2.2 12 2.2zm0-2.2C8.736 0 8.332.012 7.053.07 5.468.142 4.045.474 2.91 1.609.774 3.745.442 5.168.37 6.753.312 8.032.3 8.436.3 12c0 3.564.012 3.968.07 5.247.072 1.585.404 3.008 1.539 4.143 1.135 1.135 2.558 1.467 4.143 1.539C8.032 23.988 8.436 24 12 24s3.968-.012 5.247-.07c1.585-.072 3.008-.404 4.143-1.539 1.135-1.135 1.467-2.558 1.539-4.143.058-1.279.07-1.683.07-5.247s-.012-3.968-.07-5.247c-.072-1.585-.404-3.008-1.539-4.143C20.255.774 18.832.442 17.247.37 15.968.312 15.564.3 12 .3zM12 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a3.999 3.999 0 1 1 0-7.998 3.999 3.999 0 0 1 0 7.998zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z" />
+                    </svg>
                         <span>@umkm_ig</span>
                     </a>
 
@@ -153,7 +152,6 @@
                         <span>+62 812-3456-7890</span>
                     </a>
 
-
                     <!-- Lokasi -->
                     <div class="flex items-center gap-2 text-gray-600 dark:text-gray-300">
                         <svg class="w-5 h-5 text-red-500" fill="currentColor" viewBox="0 0 24 24">
@@ -168,11 +166,11 @@
                 </div>
             </div>
             <!-- Modal footer -->
-            <div class="flex items-center p-4 border-t border-gray-200 rounded-b dark:border-gray-600">
-                <button data-modal-hide="readProductModal2" type="button"
-                    class="text-white bg-blue-600 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-700 dark:hover:bg-blue-900 dark:focus:ring-blue-800">
-                    Tutup
-                </button>
+            <div class="flex items-center justify-end p-4 border-t border-gray-200 rounded-b dark:border-gray-600">
+                <a href="{{ url('/detailu') }}"
+                    class="text-white bg-green-600 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-green-700 dark:hover:bg-green-900 dark:focus:ring-green-800">
+                    Lihat Informasi
+            </a>
             </div>
         </div>
     </div>
