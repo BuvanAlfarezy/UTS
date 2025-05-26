@@ -20,21 +20,46 @@
                     Temukan informasi, tips, dan kisah inspiratif dari para pelaku UMKM lokal yang berkembang bersama
                     kami.
                 </p>
+                <div class="mt-6 flex justify-center items-center gap-4">
+                    <select id="kategori"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-48 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white">
+                        <option value="">Semua Kategori</option>
+                        <option value="makanan">Makanan</option>
+                        <option value="pakaian">Pakaian</option>
+                        <option value="kerajinan">Kerajinan</option>
+                    </select>
+                    <button type="button" id="terapkanFilter"
+                        class="text-white bg-blue-600 hover:bg-blue-700 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-500 dark:hover:bg-blue-600">
+                        Terapkan
+                    </button>
+                </div>
+
             </div>
 
             <div class="grid gap-8 lg:grid-cols-2">
                 <!-- Artikel 1 -->
-                <article
+                <article data-kategori="makanan"
                     class="p-6 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
                     <img src="{{ asset('img/10.jpg') }}" alt="Produk UMKM"
                         class="w-full h-48 object-cover rounded-lg mb-4" />
 
                     <div class="flex justify-between items-center mb-5 text-gray-500">
-                        <span
-                            class="bg-yellow-100 text-yellow-800 text-xs font-medium px-2.5 py-0.5 rounded dark:bg-yellow-200 dark:text-yellow-900">UMKM
-                            Bandung</span>
+                        <!-- Label UMKM + Kategori di kiri -->
+                        <div class="flex space-x-1">
+                            <span
+                                class="bg-yellow-100 text-yellow-800 text-xs font-medium px-2 py-0.5 rounded dark:bg-yellow-200 dark:text-yellow-900">
+                                UMKM Bandung
+                            </span>
+                            <span
+                                class="bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-0.5 rounded dark:bg-blue-200 dark:text-blue-900">
+                                Makanan
+                            </span>
+                        </div>
+
+                        <!-- Tanggal di kanan -->
                         <span class="text-sm">2 hari yang lalu</span>
                     </div>
+
 
                     <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                         <a href="#">Menggali Potensi Kuliner Tradisional di Era Digital</a>
@@ -52,24 +77,34 @@
                                 alt="Jese Leos avatar" />
                             <span class="font-medium dark:text-white">Admin UMKM</span>
                         </div>
-                        <button data-modal-target="detailModal" data-modal-toggle="detailModal"
+                        <a href="{{ url('/detail') }}"
                             class="inline-flex items-center font-medium text-blue-600 dark:text-blue-400 hover:underline">
                             Lihat Detail
-                        </button>
+                        </a>
                     </div>
                 </article>
 
                 <!-- Artikel 2 -->
-                <article
+                <article data-kategori="kerajinan"
                     class="p-6 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
                     <img src="{{ asset('img/11.jpg') }}" alt="Produk UMKM"
                         class="w-full h-48 object-cover rounded-lg mb-4" />
 
                     <div class="flex justify-between items-center mb-5 text-gray-500">
-                        <span
-                            class="bg-yellow-100 text-yellow-800 text-xs font-medium px-2.5 py-0.5 rounded dark:bg-yellow-200 dark:text-yellow-900">UMKM
-                            Kreatif</span>
-                        <span class="text-sm">5 hari yang lalu</span>
+                        <!-- Label UMKM + Kategori di kiri -->
+                        <div class="flex space-x-1">
+                            <span
+                                class="bg-yellow-100 text-yellow-800 text-xs font-medium px-2 py-0.5 rounded dark:bg-yellow-200 dark:text-yellow-900">
+                                UMKM Bandung
+                            </span>
+                            <span
+                                class="bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-0.5 rounded dark:bg-blue-200 dark:text-blue-900">
+                                Kerajinan
+                            </span>
+                        </div>
+
+                        <!-- Tanggal di kanan -->
+                        <span class="text-sm">2 hari yang lalu</span>
                     </div>
 
                     <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
@@ -96,16 +131,26 @@
                 </article>
 
                 <!-- Artikel 3 -->
-                <article
+                <article data-kategori="pakaian"
                     class="p-6 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
                     <img src="{{ asset('img/12.jpg') }}" alt="Produk UMKM"
                         class="w-full h-48 object-cover rounded-lg mb-4" />
 
                     <div class="flex justify-between items-center mb-5 text-gray-500">
-                        <span
-                            class="bg-yellow-100 text-yellow-800 text-xs font-medium px-2.5 py-0.5 rounded dark:bg-yellow-200 dark:text-yellow-900">UMKM
-                            Fashion</span>
-                        <span class="text-sm">1 minggu yang lalu</span>
+                        <!-- Label UMKM + Kategori di kiri -->
+                        <div class="flex space-x-1">
+                            <span
+                                class="bg-yellow-100 text-yellow-800 text-xs font-medium px-2 py-0.5 rounded dark:bg-yellow-200 dark:text-yellow-900">
+                                UMKM Fashion
+                            </span>
+                            <span
+                                class="bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-0.5 rounded dark:bg-blue-200 dark:text-blue-900">
+                                Pakaian
+                            </span>
+                        </div>
+
+                        <!-- Tanggal di kanan -->
+                        <span class="text-sm">7 hari yang lalu</span>
                     </div>
 
                     <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
@@ -132,16 +177,26 @@
                 </article>
 
                 <!-- Artikel 4 -->
-                <article
+                <article data-kategori="kerajinan"
                     class="p-6 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
                     <img src="{{ asset('img/9.jpg') }}" alt="Produk UMKM"
                         class="w-full h-48 object-cover rounded-lg mb-4" />
 
-                    <div class="flex justify-between items-center mb-5 text-gray-500">
-                        <span
-                            class="bg-yellow-100 text-yellow-800 text-xs font-medium px-2.5 py-0.5 rounded dark:bg-yellow-200 dark:text-yellow-900">UMKM
-                            Digital</span>
-                        <span class="text-sm">3 minggu yang lalu</span>
+                   <div class="flex justify-between items-center mb-5 text-gray-500">
+                        <!-- Label UMKM + Kategori di kiri -->
+                        <div class="flex space-x-1">
+                            <span
+                                class="bg-yellow-100 text-yellow-800 text-xs font-medium px-2 py-0.5 rounded dark:bg-yellow-200 dark:text-yellow-900">
+                                UMKM Fashion
+                            </span>
+                            <span
+                                class="bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-0.5 rounded dark:bg-blue-200 dark:text-blue-900">
+                                Kerajinan
+                            </span>
+                        </div>
+
+                        <!-- Tanggal di kanan -->
+                        <span class="text-sm">2 minggu yang lalu</span>
                     </div>
 
                     <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
@@ -171,44 +226,28 @@
         </div>
         <x-footer />
     </section>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const button = document.getElementById("terapkanFilter");
+            const select = document.getElementById("kategori");
+            const articles = document.querySelectorAll("article[data-kategori]");
 
-    <!-- Modal Detail -->
-    <div id="detailModal" tabindex="-1" aria-hidden="true"
-        class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto h-[calc(100%-1rem)] max-h-full bg-black/50 backdrop-blur-sm">
-        <div class="relative w-full max-w-2xl max-h-full">
-            <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-                <div class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600">
-                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
-                        Detail Artikel
-                    </h3>
-                    <button type="button"
-                        class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
-                        data-modal-hide="detailModal">
-                        <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M6 18L18 6M6 6l12 12"></path>
-                        </svg>
-                        <span class="sr-only">Close modal</span>
-                    </button>
-                </div>
-                <div class="p-6 space-y-6">
-                    <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                        Artikel ini membahas berbagai strategi yang telah diterapkan oleh pelaku UMKM di Indonesia untuk
-                        memperluas pasar dan meningkatkan penjualan, mulai dari pemasaran digital, branding produk,
-                        hingga kolaborasi dengan platform e-commerce lokal.
-                    </p>
-                </div>
-                <div class="flex items-center justify-end p-4 border-t border-gray-200 rounded-b dark:border-gray-600">
-                    <button data-modal-hide="detailModal" type="button"
-                        class="text-white bg-blue-600 hover:bg-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
-                        Tutup
-                    </button>
-                </div>
-            </div>
-        </div>
+            button.addEventListener("click", function() {
+                const selected = select.value;
 
-    </div>
+                articles.forEach(article => {
+                    const kategori = article.getAttribute("data-kategori");
+
+                    if (selected === "" || kategori === selected) {
+                        article.classList.remove("hidden");
+                    } else {
+                        article.classList.add("hidden");
+                    }
+                });
+            });
+        });
+    </script>
+
 </body>
 
 </html>

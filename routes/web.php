@@ -14,3 +14,9 @@ Route::get('/berita', function () {
 Route::get('/about', function () {
     return view('about');
 });
+Route::get('/detail', function () {
+    return view('detail_berita');
+});
+Route::get('/detailu', function () {
+    return view('detail_umkm');
+});
